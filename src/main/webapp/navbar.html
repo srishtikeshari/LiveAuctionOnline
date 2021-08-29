@@ -1,0 +1,47 @@
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.jsp"> <i class="fa fa-usd text-center text-white" aria-hidden="true"></i> Online Auction </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+<div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav  mr-auto">
+            
+            <li class="nav-item active mr-auto">
+              <a class="nav-link" href="index.jsp"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active mr-auto">
+                <a class="nav-link" href="upcomingBids.jsp"><i class="fa fa-arrow-up" aria-hidden="true"></i> Upcoming Bids <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active mr-auto">
+                <a href="myProducts.jsp" class="nav-link" >My <i class="fa fa-product-hunt" aria-hidden="true"></i>roducts List <span class="sr-only">(current)</span></a>
+              </li>          
+              <li class="nav-item mr-auto">
+                <a href="addproduct.jsp"><button class="btn btn-outline-info mr-1 "><i class="fa fa-plus-circle" aria-hidden="true"></i> Add product</button></a>  
+               </li>
+                 
+          </ul>
+                  <ul class="navbar-nav ml-auto">
+                  
+               
+                   <li>    <div class="dropdown show" id="drop"   style="display:none;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Hi <% out.println(session.getAttribute("username"));%>
+                     </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">My Profile</a>
+                         <a class="dropdown-item" href="logout">Logout</a>
+                            </div>
+                        </div></li>
+                  
+            <li class="nav-item ml-auto" >
+              <button class="btn btn-secondary"   id="signinbutton" data-target="#mymodel" data-toggle="modal"  style="display:none;">Login/SignUp</button>
+            </li>
+          </ul>
+          
+            
+            <%@include  file="loginModal.html" %>
+              
+            </div>
+            </nav>

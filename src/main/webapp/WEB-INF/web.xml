@@ -1,0 +1,182 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>UserController</servlet-name>
+  	<display-name>UserController</display-name>
+  	<description></description>
+  	<servlet-class>controller.UserController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>registerController</servlet-name>
+  	<display-name>registerController</display-name>
+  	<description></description>
+  	<servlet-class>controller.registerController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>productController</servlet-name>
+  	<display-name>productController</display-name>
+  	<description></description>
+  	<servlet-class>controller.productController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetProducts</servlet-name>
+  	<display-name>GetProducts</display-name>
+  	<description></description>
+  	<servlet-class>controller.GetProducts</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>controller.Logout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MyPostedProducts</servlet-name>
+  	<display-name>MyPostedProducts</display-name>
+  	<description></description>
+  	<servlet-class>controller.MyPostedProducts</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegForProducts</servlet-name>
+  	<display-name>RegForProducts</display-name>
+  	<description></description>
+  	<servlet-class>controller.RegForProducts</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisteredProductList</servlet-name>
+  	<display-name>RegisteredProductList</display-name>
+  	<description></description>
+  	<servlet-class>controller.RegisteredProductList</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MyUpcomingBids</servlet-name>
+  	<display-name>MyUpcomingBids</display-name>
+  	<description></description>
+  	<servlet-class>controller.MyUpcomingBids</servlet-class>
+  </servlet>
+  <servlet>
+
+  	<servlet-name>AddNewCategory</servlet-name>
+  	<display-name>AddNewCategory</display-name>
+  	<description></description>
+  	<servlet-class>controller.AddNewCategory</servlet-class>
+  </servlet>
+    <servlet>
+
+  	<servlet-name>ApplyFilter</servlet-name>
+  	<display-name>ApplyFilter</display-name>
+  	<description></description>
+  	<servlet-class>controller.ApplyFilter</servlet-class>
+  </servlet>
+    <servlet>
+    	<servlet-name>getImage</servlet-name>
+    	<display-name>getImage</display-name>
+    	<description></description>
+    	<servlet-class>controller.getImage</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>RetrieveBids</servlet-name>
+    	<display-name>RetrieveBids</display-name>
+    	<description></description>
+    	<servlet-class>controller.RetrieveBids</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>SubmitBid</servlet-name>
+    	<display-name>SubmitBid</display-name>
+    	<description></description>
+    	<servlet-class>controller.SubmitBid</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>NotifyWinner</servlet-name>
+    	<display-name>NotifyWinner</display-name>
+    	<description></description>
+    	<servlet-class>controller.NotifyWinner</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>GetRegisteredUsers</servlet-name>
+    	<display-name>GetRegisteredUsers</display-name>
+    	<description></description>
+    	<servlet-class>controller.GetRegisteredUsers</servlet-class>
+    </servlet>
+
+  
+  
+
+  <servlet-mapping>
+  	<servlet-name>UserController</servlet-name>
+  	<url-pattern>/checklogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>registerController</servlet-name>
+  	<url-pattern>/registeruser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>productController</servlet-name>
+  	<url-pattern>/addproduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetProducts</servlet-name>
+  	<url-pattern>/GetProducts</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MyPostedProducts</servlet-name>
+  	<url-pattern>/viewmyproducts</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegForProducts</servlet-name>
+  	<url-pattern>/RegForProducts</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisteredProductList</servlet-name>
+  	<url-pattern>/RegisteredProductList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MyUpcomingBids</servlet-name>
+  	<url-pattern>/MyUpcomingBids</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddNewCategory</servlet-name>
+  	<url-pattern>/addCategory</url-pattern>
+   </servlet-mapping>	
+   
+ <servlet-mapping> 
+  	<servlet-name>ApplyFilter</servlet-name>
+  	<url-pattern>/ApplyFilter</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>getImage</servlet-name>
+ 	<url-pattern>/getImage.jsp</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>RetrieveBids</servlet-name>
+ 	<url-pattern>/RetrieveBids</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>SubmitBid</servlet-name>
+ 	<url-pattern>/SubmitBid</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>NotifyWinner</servlet-name>
+ 	<url-pattern>/NotifyWinner</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>GetRegisteredUsers</servlet-name>
+ 	<url-pattern>/GetRegisteredUsers</url-pattern>
+ </servlet-mapping>
+
+  	
+  
+
+  
+  
+  
+  
+</web-app>
